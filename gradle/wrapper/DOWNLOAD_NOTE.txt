@@ -1,0 +1,16 @@
+Le fichier gradle-wrapper.jar doit être téléchargé séparément.
+
+Option 1 — Téléchargement automatique avec Gradle installé:
+  gradle wrapper --gradle-version 8.4
+
+Option 2 — Téléchargement manuel:
+  URL: https://github.com/gradle/gradle/blob/v8.4.0/gradle/wrapper/gradle-wrapper.jar
+  Ou copiez depuis n'importe quel projet Android existant.
+
+Option 3 — Android Studio le génère automatiquement:
+  File → New → Import Project → sélectionnez le dossier android/
+  Android Studio télécharge tout automatiquement.
+
+Option 4 — GitHub Actions (recommandé):
+  Uploadez le projet sur GitHub, le workflow .github/workflows/build.yml
+  compile l'APK automatiquement sans rien installer.
